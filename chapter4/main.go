@@ -3,7 +3,8 @@ package main
 import "fmt"
 
 var (
-	no float64
+	no     float64
+	output float64
 )
 
 func main() {
@@ -17,6 +18,10 @@ func main() {
 	var a string = "Hello"
 	var b string = "Hello"
 	fmt.Println(a == b)
+
+	// we can also initialize two variables together
+	var h, j int = 3, 4
+	fmt.Println(h, j)
 
 	// shorhands
 	z := "Hello World"
@@ -35,6 +40,7 @@ func main() {
 	// Example program
 	fmt.Print("Enter a number: ")
 	fmt.Scanf("%f", &no)
-	output := no * 2
+	output = no * 2
 	fmt.Println("You entered: ", no, " and the double of it is ", output)
+
 }
